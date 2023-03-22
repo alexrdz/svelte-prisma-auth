@@ -2,13 +2,15 @@
 	import { signIn } from '@auth/sveltekit/client';
 </script>
 
-<header>
-	<img src="/logo.svg" alt="" />
+<header class="flex p-8">
+	Logo
 
-	<nav>
+	<nav class="ml-auto space-x-4">
 		<a href="/">Home</a>
 		<a href="/pricing">Pricing</a>
-		<button on:click|preventDefault={() => signIn('github', {callbackUrl: '/dashboard'})}>Sign In</button>
+		<button on:click|preventDefault={() => signIn('github', { callbackUrl: '/dashboard' })}
+			>Sign In</button
+		>
 	</nav>
 </header>
 

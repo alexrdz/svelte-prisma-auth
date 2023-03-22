@@ -3,10 +3,10 @@
 	import { user } from '$lib/stores';
 </script>
 
-<header>
-	<img src="/logo.svg" alt="" />
+<header class="flex">
+	Logo
 
-	<nav>
+	<nav class="ml-auto space-x-4">
 		<a href="/dashboard">Dashboard</a>
 		<a href="/billing">Billing</a>
 		<button on:click|preventDefault={signOut}>Sign Out</button>
